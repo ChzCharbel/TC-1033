@@ -7,24 +7,21 @@ private:
   string name;
   string role;
   string genre;
-  float height;
-  float weight;
+  string ultimate;
 
 public:
-  Character():name(""), role(""), genre(""), height(0.0), weight(0.0){};
-  Character(string nm, string rl, string gnr, float hght, float wght): name(nm), role(rl), genre(gnr), height(hght), weight(wght){};
+  Character():name(""), role(""), genre(""), ultimate(""){};
+  Character(string nm, string rl, string gnr, string ult): name(nm), role(rl), genre(gnr), ultimate(ult){};
 
   string get_name();
   string get_role();
   string get_genre();
-  float get_height();
-  float get_weight();
+  string get_ultimate();
 
   void set_name(string );
   void set_role(string );
-  void set_genre(string );
-  void set_height(float );
-  void set_weight(float );  
+  void set_genre(string );  
+  void set_ultimate(string );
 
 };
 
@@ -40,12 +37,8 @@ string Character::get_genre(){
   return genre;
 }
 
-float Character::get_height(){
-  return height;
-}
-
-float Character::get_weight(){
-  return weight;
+string Character::get_ultimate(){
+  return ultimate;
 }
 
 void Character::set_name(string nm){
@@ -60,10 +53,6 @@ void Character::set_genre(string gnr){
   genre = gnr;
 }
 
-void Character::set_height(float hght){
-  height = hght;
-}
-
-void Character::set_weight(float wght){
-  weight = wght;
+void Character::set_ultimate(string ult){
+  ultimate = ult;
 }
