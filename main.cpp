@@ -6,13 +6,15 @@
 
 using namespace std;
 
-int charac(){
+int Crear_Personaje(){
+  int max = 100;
+  while(int i = 0, i < max, i ++){
+    Character personaje[i];
+    cout << "Ingresa el nombre del personaje\n";
+    cin >> personaje[i].name;
 
-  Character wind("Jett", "Duelista", "Femenino", "Dagas");
-  cout << wind.get_name() << endl;
-  cout << wind.get_role() << endl;
-  cout << wind.get_genre() << endl;
-  cout << wind.get_ultimate() << endl;
+  }
+  
   
 
   Character fire;
